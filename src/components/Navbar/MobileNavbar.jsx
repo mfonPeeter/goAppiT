@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const MobileNavbar = ({
   open,
   serviceOpenSubmenu,
@@ -14,12 +16,14 @@ const MobileNavbar = ({
       <li className="inline-block w-72 border-b border-gray-300 sm:w-96">
         <div className="flex flex-col">
           <div className="group flex items-center justify-between cursor-pointer">
-            <a
-              href="/"
-              className="py-4 inline-block transition-colors outline-[#fda19c] group-hover:text-[#fa4238] hover:text-[#fa4238]"
+            <NavLink
+              to="/service"
+              className={`${({ isActive }) =>
+                isActive &&
+                "active"} py-4 inline-block transition-colors outline-[#fda19c] group-hover:text-[#fa4238] hover:text-[#fa4238]`}
             >
               Service
-            </a>
+            </NavLink>
             <div
               className={`w-full py-5 flex justify-end ${
                 serviceOpenSubmenu
@@ -37,59 +41,73 @@ const MobileNavbar = ({
             }`}
           >
             <li className="flex flex-col space-y-2.5">
-              <a
-                href="/"
-                className="outline-[#fda19c] transition-colors hover:text-[#fa4238]"
+              <NavLink
+                to="/web-development"
+                className={`${({ isActive }) =>
+                  isActive &&
+                  "active"} outline-[#fda19c] transition-colors hover:text-[#fa4238]`}
               >
                 Web development
-              </a>
-              <a
-                href="/"
-                className="outline-[#fda19c] transition-colors hover:text-[#fa4238]"
+              </NavLink>
+              <NavLink
+                to="/system-integration"
+                className={`${({ isActive }) =>
+                  isActive &&
+                  "active"} outline-[#fda19c] transition-colors hover:text-[#fa4238]`}
               >
                 System Integration
-              </a>
-              <a
-                href="/"
-                className="outline-[#fda19c] transition-colors hover:text-[#fa4238]"
+              </NavLink>
+              <NavLink
+                to="/data-processing"
+                className={`${({ isActive }) =>
+                  isActive &&
+                  "active"} outline-[#fda19c] transition-colors hover:text-[#fa4238]`}
               >
                 Data Processing
-              </a>
-              <a
-                href="/"
-                className="outline-[#fda19c] transition-colors hover:text-[#fa4238]"
+              </NavLink>
+              <NavLink
+                to="/automation"
+                className={`${({ isActive }) =>
+                  isActive &&
+                  "active"} outline-[#fda19c] transition-colors hover:text-[#fa4238]`}
               >
                 Automation
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
       </li>
       <li className="w-72 border-b border-gray-300 sm:w-96">
-        <a
-          href="/"
-          className="py-4 inline-block outline-[#fda19c] transition-colors hover:text-[#fa4238]"
+        <NavLink
+          to="/solutions"
+          className={`${({ isActive }) =>
+            isActive &&
+            "active"} py-4 inline-block outline-[#fda19c] transition-colors hover:text-[#fa4238]`}
         >
           Solutions
-        </a>
+        </NavLink>
       </li>
       <li className="w-72 border-b border-gray-300 sm:w-96">
-        <a
-          href="/"
-          className="py-4 inline-block outline-[#fda19c] transition-colors hover:text-[#fa4238]"
+        <NavLink
+          to="/consulting"
+          className={`${({ isActive }) =>
+            isActive &&
+            "active"} py-4 inline-block outline-[#fda19c] transition-colors hover:text-[#fa4238]`}
         >
           Consulting
-        </a>
+        </NavLink>
       </li>
       <li className="inline-block w-72 border-b border-gray-300 sm:w-96">
         <div className="flex flex-col">
           <div className="group flex items-center justify-between cursor-pointer">
-            <a
-              href="/"
-              className="py-4 inline-block outline-[#fda19c] transition-colors group-hover:text-[#fa4238] hover:text-[#fa4238]"
+            <NavLink
+              to="/apps"
+              className={`${({ isActive }) =>
+                isActive &&
+                "active"} py-4 inline-block transition-colors outline-[#fda19c] group-hover:text-[#fa4238] hover:text-[#fa4238]`}
             >
               Apps
-            </a>
+            </NavLink>
             <div
               className={`w-full py-5 flex justify-end ${
                 appsOpenSubmenu ? "mobile-down-icon-box" : "mobile-up-icon-box"
@@ -105,32 +123,36 @@ const MobileNavbar = ({
             }`}
           >
             <li className="flex flex-col space-y-2.5">
-              <a
-                href="/"
-                className="outline-[#fda19c] transition-colors hover:text-[#fa4238]"
+              <NavLink
+                to="/goshareit"
+                className={`${({ isActive }) =>
+                  isActive &&
+                  "active"} outline-[#fda19c] transition-colors hover:text-[#fa4238]`}
               >
                 goSHAREiT
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
       </li>
       <li className="w-72 border-b border-gray-300 sm:w-96">
-        <a
-          href="/"
-          className="py-4 inline-block outline-[#fda19c] transition-colors hover:text-[#fa4238]"
+        <NavLink
+          to="/about-us"
+          className={`${({ isActive }) =>
+            isActive &&
+            "active"} py-4 inline-block outline-[#fda19c] transition-colors hover:text-[#fa4238]`}
         >
           About Us
-        </a>
+        </NavLink>
       </li>
 
       <div className="pt-8 w-72 sm:w-96">
-        <a
-          href="/"
+        <NavLink
+          to="/contact-us"
           className="w-full py-3 text-center bg-[#fa4238] rounded-full inline-block"
         >
           Contact Us
-        </a>
+        </NavLink>
       </div>
     </ul>
   );

@@ -68,4 +68,9 @@
     rotate: 0;
     transition: 200ms;
   }
+
+  /* NavLink */
+  a.active {
+    color: #fa4238;
+  }
 }
