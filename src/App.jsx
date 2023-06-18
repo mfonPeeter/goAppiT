@@ -1,5 +1,11 @@
+import RootLayout from "./pages/Root";
+
 const App = () => {
-  return <div>Hello World!</div>;
+  return (
+    <>
+      <RootLayout />
+    </>
+  );
 };
 
 export default App;
