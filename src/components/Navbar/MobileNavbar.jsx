@@ -9,18 +9,18 @@ const MobileNavbar = ({
 }) => {
   return (
     <ul
-      className={`absolute w-full h-full bottom-0 flex flex-col items-center py-20 px-2 bg-[#fda19c] transition-all duration-[350ms] ease-linear md:hidden ${
+      className={`fixed w-full h-full bottom-0 flex flex-col items-center py-20 px-2 bg-[#feb8cc] transition-all duration-[350ms] ease-linear md:hidden ${
         open ? "left-0 opacity-100" : "right-[100%] opacity-0"
       }`}
     >
-      <li className="inline-block w-72 border-b border-gray-300 sm:w-96">
+      <li className="inline-block w-72 border-b border-[#fda0bb] sm:w-96">
         <div className="flex flex-col">
           <div className="group flex items-center justify-between cursor-pointer">
             <NavLink
               to="/service"
               className={`${({ isActive }) =>
                 isActive &&
-                "active"} py-4 inline-block transition-colors outline-[#fda19c] group-hover:text-[#fa4238] hover:text-[#fa4238]`}
+                "active"} py-4 inline-block transition-colors outline-[#feb8cc] group-hover:text-[#fa1154] hover:text-[#fa1154]`}
             >
               Service
             </NavLink>
@@ -36,7 +36,7 @@ const MobileNavbar = ({
             </div>
           </div>
           <ul
-            className={`pl-4 pb-4 -mt-2 bg-[#fda19c] rounded-xl transition-all duration-300 ${
+            className={`pl-4 pb-4 -mt-2 bg-[#feb8cc] rounded-xl transition-all duration-300 ${
               serviceOpenSubmenu ? "inline-block" : "hidden"
             }`}
           >
@@ -45,7 +45,7 @@ const MobileNavbar = ({
                 to="/web-development"
                 className={`${({ isActive }) =>
                   isActive &&
-                  "active"} outline-[#fda19c] transition-colors hover:text-[#fa4238]`}
+                  "active"} outline-[#feb8cc] transition-colors hover:text-[#fa1154]`}
               >
                 Web development
               </NavLink>
@@ -53,7 +53,7 @@ const MobileNavbar = ({
                 to="/system-integration"
                 className={`${({ isActive }) =>
                   isActive &&
-                  "active"} outline-[#fda19c] transition-colors hover:text-[#fa4238]`}
+                  "active"} outline-[#feb8cc] transition-colors hover:text-[#fa1154]`}
               >
                 System Integration
               </NavLink>
@@ -61,7 +61,7 @@ const MobileNavbar = ({
                 to="/data-processing"
                 className={`${({ isActive }) =>
                   isActive &&
-                  "active"} outline-[#fda19c] transition-colors hover:text-[#fa4238]`}
+                  "active"} outline-[#feb8cc] transition-colors hover:text-[#fa1154]`}
               >
                 Data Processing
               </NavLink>
@@ -69,7 +69,7 @@ const MobileNavbar = ({
                 to="/automation"
                 className={`${({ isActive }) =>
                   isActive &&
-                  "active"} outline-[#fda19c] transition-colors hover:text-[#fa4238]`}
+                  "active"} outline-[#feb8cc] transition-colors hover:text-[#fa1154]`}
               >
                 Automation
               </NavLink>
@@ -77,34 +77,34 @@ const MobileNavbar = ({
           </ul>
         </div>
       </li>
-      <li className="w-72 border-b border-gray-300 sm:w-96">
+      <li className="w-72 border-b border-[#fda0bb] sm:w-96">
         <NavLink
           to="/solutions"
           className={`${({ isActive }) =>
             isActive &&
-            "active"} py-4 inline-block outline-[#fda19c] transition-colors hover:text-[#fa4238]`}
+            "active"} py-4 inline-block outline-[#feb8cc] transition-colors hover:text-[#fa1154]`}
         >
           Solutions
         </NavLink>
       </li>
-      <li className="w-72 border-b border-gray-300 sm:w-96">
+      <li className="w-72 border-b border-[#fda0bb] sm:w-96">
         <NavLink
           to="/consulting"
           className={`${({ isActive }) =>
             isActive &&
-            "active"} py-4 inline-block outline-[#fda19c] transition-colors hover:text-[#fa4238]`}
+            "active"} py-4 inline-block outline-[#feb8cc] transition-colors hover:text-[#fa1154]`}
         >
           Consulting
         </NavLink>
       </li>
-      <li className="inline-block w-72 border-b border-gray-300 sm:w-96">
+      <li className="inline-block w-72 border-b border-[#fda0bb] sm:w-96">
         <div className="flex flex-col">
           <div className="group flex items-center justify-between cursor-pointer">
             <NavLink
               to="/apps"
               className={`${({ isActive }) =>
                 isActive &&
-                "active"} py-4 inline-block transition-colors outline-[#fda19c] group-hover:text-[#fa4238] hover:text-[#fa4238]`}
+                "active"} py-4 inline-block transition-colors outline-[#feb8cc] group-hover:text-[#fa1154] hover:text-[#fa1154]`}
             >
               Apps
             </NavLink>
@@ -118,7 +118,7 @@ const MobileNavbar = ({
             </div>
           </div>
           <ul
-            className={`pl-4 pb-4 -mt-2 bg-[#fda19c] rounded-xl transition-all duration-300 ${
+            className={`pl-4 pb-4 -mt-2 bg-[#feb8cc] rounded-xl transition-all duration-300 ${
               appsOpenSubmenu ? "inline-block" : "hidden"
             }`}
           >
@@ -127,7 +127,7 @@ const MobileNavbar = ({
                 to="/goshareit"
                 className={`${({ isActive }) =>
                   isActive &&
-                  "active"} outline-[#fda19c] transition-colors hover:text-[#fa4238]`}
+                  "active"} outline-[#feb8cc] transition-colors hover:text-[#fa1154]`}
               >
                 goSHAREiT
               </NavLink>
@@ -135,12 +135,12 @@ const MobileNavbar = ({
           </ul>
         </div>
       </li>
-      <li className="w-72 border-b border-gray-300 sm:w-96">
+      <li className="w-72 border-b border-[#fda0bb] sm:w-96">
         <NavLink
           to="/about-us"
           className={`${({ isActive }) =>
             isActive &&
-            "active"} py-4 inline-block outline-[#fda19c] transition-colors hover:text-[#fa4238]`}
+            "active"} py-4 inline-block outline-[#feb8cc] transition-colors hover:text-[#fa1154]`}
         >
           About Us
         </NavLink>
@@ -149,7 +149,7 @@ const MobileNavbar = ({
       <div className="pt-8 w-72 sm:w-96">
         <NavLink
           to="/contact-us"
-          className="w-full py-3 text-center bg-[#fa4238] rounded-full inline-block"
+          className="w-full py-3 text-white text-center bg-[#fa1154] rounded-full inline-block"
         >
           Contact Us
         </NavLink>

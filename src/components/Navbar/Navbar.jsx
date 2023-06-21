@@ -14,15 +14,15 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="text-white bg-[#fda19c] md:px-4 lg:px-9">
+    <nav className="text-[#4b0519] bg-[#feb8cc] md:px-4 lg:px-9">
       <div className="mx-auto max-w-screen-2xl flex items-center justify-between font-medium">
         <div className="z-50 w-full px-6 flex justify-between md:px-0 md:w-auto">
-          <Link to="/" className="py-6 inline-block outline-[#fda19c]">
+          <Link to="/" className="py-6 inline-block outline-[#feb8cc]">
             <img src={goappitLogo} alt="Logo" className="w-24" />
           </Link>
           <div className="px-6 py-6 md:hidden">
             <button
-              className={`z-20 fixed hamburger block outline-[#fda19c] md:hidden ${
+              className={`z-20 fixed hamburger block outline-[#feb8cc] md:hidden ${
                 open && "open"
               }`}
               onClick={navToggleHandler}
@@ -41,20 +41,20 @@ const Navbar = () => {
                 to="/service"
                 className={`${({ isActive }) =>
                   isActive &&
-                  "active"} flex py-6 px-3 outline-[#fda19c] transition-colors hover:text-[#fa4238]`}
+                  "active"} flex py-6 px-3 outline-[#feb8cc] transition-colors hover:text-[#fa1154]`}
               >
                 Service
                 <span className="flex items-center ml-1">
                   <ion-icon name="chevron-down-outline"></ion-icon>
                 </span>
               </NavLink>
-              <ul className="hidden absolute top-20 px-2 py-3 bg-[#fda19c] rounded-xl transition-all duration-300 group-hover:block hover:block">
+              <ul className="hidden absolute top-16 px-2 py-3 bg-[#feb8cc] rounded-xl shadow-lg transition-all duration-300 group-hover:block hover:block">
                 <li className="flex flex-col space-y-2">
                   <NavLink
                     to="/web-development"
                     className={`${({ isActive }) =>
                       isActive &&
-                      "active"} px-2 rounded-md outline-[#fda19c] transition-color hover:text-[#fa4238] hover:bg-[#fdb3af]`}
+                      "active"} px-2 rounded-md outline-[#feb8cc] transition-color hover:text-[#fa1154] hover:bg-[#fda0bb]`}
                   >
                     Web development
                   </NavLink>
@@ -62,7 +62,7 @@ const Navbar = () => {
                     to="/system-integration"
                     className={`${({ isActive }) =>
                       isActive &&
-                      "active"} px-2 rounded-md outline-[#fda19c] transition-color hover:text-[#fa4238] hover:bg-[#fdb3af]`}
+                      "active"} px-2 rounded-md outline-[#feb8cc] transition-color hover:text-[#fa1154] hover:bg-[#fda0bb]`}
                   >
                     System Integration
                   </NavLink>
@@ -70,7 +70,7 @@ const Navbar = () => {
                     to="/data-processing"
                     className={`${({ isActive }) =>
                       isActive &&
-                      "active"} px-2 rounded-md outline-[#fda19c] transition-color hover:text-[#fa4238] hover:bg-[#fdb3af]`}
+                      "active"} px-2 rounded-md outline-[#feb8cc] transition-color hover:text-[#fa1154] hover:bg-[#fda0bb]`}
                   >
                     Data Processing
                   </NavLink>
@@ -78,7 +78,7 @@ const Navbar = () => {
                     to="/automation"
                     className={`${({ isActive }) =>
                       isActive &&
-                      "active"} px-2 rounded-md outline-[#fda19c] transition-color hover:text-[#fa4238] hover:bg-[#fdb3af]`}
+                      "active"} px-2 rounded-md outline-[#feb8cc] transition-color hover:text-[#fa1154] hover:bg-[#fda0bb]`}
                   >
                     Automation
                   </NavLink>
@@ -90,7 +90,7 @@ const Navbar = () => {
                 to="/solutions"
                 className={`${({ isActive }) =>
                   isActive &&
-                  "active"} flex py-6 px-3 outline-[#fda19c] transition-colors hover:text-[#fa4238]`}
+                  "active"} flex py-6 px-3 outline-[#feb8cc] transition-colors hover:text-[#fa1154]`}
               >
                 Solutions
               </NavLink>
@@ -100,7 +100,7 @@ const Navbar = () => {
                 to="/consulting"
                 className={`${({ isActive }) =>
                   isActive &&
-                  "active"} flex py-6 px-3 outline-[#fda19c] transition-colors hover:text-[#fa4238]`}
+                  "active"} flex py-6 px-3 outline-[#feb8cc] transition-colors hover:text-[#fa1154]`}
               >
                 Consulting
               </NavLink>
@@ -108,20 +108,20 @@ const Navbar = () => {
             <li className="group">
               <NavLink
                 to="/apps"
-                className="flex py-6 px-3 outline-[#fda19c] transition-colors hover:text-[#fa4238]"
+                className="flex py-6 px-3 outline-[#feb8cc] transition-colors hover:text-[#fa1154]"
               >
                 Apps
                 <span className="flex items-center ml-1">
                   <ion-icon name="chevron-down-outline"></ion-icon>
                 </span>
               </NavLink>
-              <ul className="hidden absolute top-20 px-2 py-3 bg-[#fda19c] rounded-xl transition-all duration-300 group-hover:block hover:block">
+              <ul className="hidden absolute top-16 px-2 py-3 bg-[#feb8cc] rounded-xl shadow-lg transition-all duration-300 group-hover:block hover:block">
                 <li className="flex flex-col space-y-2">
                   <NavLink
                     to="/goshareit"
                     className={`${({ isActive }) =>
                       isActive &&
-                      "active"} px-2 rounded-md outline-[#fda19c] transition-color hover:text-[#fa4238] hover:bg-[#fdb3af]`}
+                      "active"} px-2 rounded-md outline-[#feb8cc] transition-color hover:text-[#fa1154] hover:bg-[#fda0bb]`}
                   >
                     goSHAREiT
                   </NavLink>
@@ -133,7 +133,7 @@ const Navbar = () => {
                 to="/about-us"
                 className={`${({ isActive }) =>
                   isActive &&
-                  "active"} flex py-6 px-3 outline-[#fda19c] transition-colors hover:text-[#fa4238]`}
+                  "active"} flex py-6 px-3 outline-[#feb8cc] transition-colors hover:text-[#fa1154]`}
               >
                 About Us
               </NavLink>
@@ -142,7 +142,7 @@ const Navbar = () => {
           <div>
             <NavLink
               to="/contact-us"
-              className="px-5 py-2 bg-[#fa4238] rounded-full inline-block"
+              className="px-5 py-2 text-white bg-[#fa1154] rounded-full inline-block"
             >
               Contact Us
             </NavLink>
