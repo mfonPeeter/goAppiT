@@ -2,7 +2,7 @@ import webDevImg from "/assets/services/web-dev-1.png";
 
 const Services = () => {
   return (
-    <section className="pt-10 pb-24 px-28 border border-red-400">
+    <section className="pt-10 pb-24 px-28">
       <h2 className="mb-8 text-4xl text-center text-[#333] font-bold">
         Services
       </h2>

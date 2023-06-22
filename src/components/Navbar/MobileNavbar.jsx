@@ -9,11 +9,11 @@ const MobileNavbar = ({
 }) => {
   return (
     <ul
-      className={`fixed w-full h-full bottom-0 flex flex-col items-center py-20 px-2 bg-[#feb8cc] transition-all duration-[350ms] ease-linear md:hidden ${
+      className={`fixed w-full h-full bottom-0 flex flex-col items-center py-20 px-2 bg-white transition-all duration-[350ms] ease-linear md:hidden ${
         open ? "left-0 opacity-100" : "right-[100%] opacity-0"
       }`}
     >
-      <li className="inline-block w-72 border-b border-[#fda0bb] sm:w-96">
+      <li className="inline-block w-72 border-b border-gray-200 sm:w-96">
         <div className="flex flex-col">
           <div className="group flex items-center justify-between cursor-pointer">
             <NavLink
@@ -36,7 +36,7 @@ const MobileNavbar = ({
             </div>
           </div>
           <ul
-            className={`pl-4 pb-4 -mt-2 bg-[#feb8cc] rounded-xl transition-all duration-300 ${
+            className={`pl-4 pb-4 -mt-2 bg-white rounded-xl transition-all duration-300 ${
               serviceOpenSubmenu ? "inline-block" : "hidden"
             }`}
           >
@@ -77,7 +77,7 @@ const MobileNavbar = ({
           </ul>
         </div>
       </li>
-      <li className="w-72 border-b border-[#fda0bb] sm:w-96">
+      <li className="w-72 border-b border-gray-200 sm:w-96">
         <NavLink
           to="/solutions"
           className={`${({ isActive }) =>
@@ -87,7 +87,7 @@ const MobileNavbar = ({
           Solutions
         </NavLink>
       </li>
-      <li className="w-72 border-b border-[#fda0bb] sm:w-96">
+      <li className="w-72 border-b border-gray-200 sm:w-96">
         <NavLink
           to="/consulting"
           className={`${({ isActive }) =>
@@ -97,7 +97,7 @@ const MobileNavbar = ({
           Consulting
         </NavLink>
       </li>
-      <li className="inline-block w-72 border-b border-[#fda0bb] sm:w-96">
+      <li className="inline-block w-72 border-b border-gray-200 sm:w-96">
         <div className="flex flex-col">
           <div className="group flex items-center justify-between cursor-pointer">
             <NavLink
@@ -118,7 +118,7 @@ const MobileNavbar = ({
             </div>
           </div>
           <ul
-            className={`pl-4 pb-4 -mt-2 bg-[#feb8cc] rounded-xl transition-all duration-300 ${
+            className={`pl-4 pb-4 -mt-2 bg-white rounded-xl transition-all duration-300 ${
               appsOpenSubmenu ? "inline-block" : "hidden"
             }`}
           >
@@ -135,7 +135,7 @@ const MobileNavbar = ({
           </ul>
         </div>
       </li>
-      <li className="w-72 border-b border-[#fda0bb] sm:w-96">
+      <li className="w-72 border-b border-gray-200 sm:w-96">
         <NavLink
           to="/about-us"
           className={`${({ isActive }) =>
