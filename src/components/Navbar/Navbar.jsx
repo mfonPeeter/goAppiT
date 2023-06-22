@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="text-[#4b0519] bg-white md:px-4 lg:px-9">
+    <nav className="text-[#4b0519] bg-[#feb8cc] md:px-4 lg:px-9">
       <div className="container mx-auto max-w-screen-2xl flex items-center justify-between font-medium">
         <div className="z-50 w-full px-6 flex justify-between md:px-0 md:w-auto">
           <Link to="/" className="py-6 inline-block outline-[#feb8cc]">
@@ -48,7 +48,7 @@ const Navbar = () => {
                   <ion-icon name="chevron-down-outline"></ion-icon>
                 </span>
               </NavLink>
-              <ul className="hidden absolute top-16 px-2 py-3 bg-white rounded-xl shadow-lg transition-all duration-300 group-hover:block hover:block">
+              <ul className="hidden absolute top-16 px-2 py-3 bg-[#feb8cc] rounded-xl shadow-lg transition-all duration-300 group-hover:block hover:block">
                 <li className="flex flex-col space-y-2">
                   <NavLink
                     to="/web-development"
@@ -115,7 +115,7 @@ const Navbar = () => {
                   <ion-icon name="chevron-down-outline"></ion-icon>
                 </span>
               </NavLink>
-              <ul className="hidden absolute top-16 px-2 py-3 bg-white rounded-xl shadow-lg transition-all duration-300 group-hover:block hover:block">
+              <ul className="hidden absolute top-16 px-2 py-3 bg-[#feb8cc] rounded-xl shadow-lg transition-all duration-300 group-hover:block hover:block">
                 <li className="flex flex-col space-y-2">
                   <NavLink
                     to="/goshareit"
