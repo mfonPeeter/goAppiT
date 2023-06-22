@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <nav className="text-[#4b0519] bg-[#feb8cc] md:px-4 lg:px-9">
-      <div className="mx-auto max-w-screen-2xl flex items-center justify-between font-medium">
+      <div className="container mx-auto max-w-screen-2xl flex items-center justify-between font-medium">
         <div className="z-50 w-full px-6 flex justify-between md:px-0 md:w-auto">
           <Link to="/" className="py-6 inline-block outline-[#feb8cc]">
             <img src={goappitLogo} alt="Logo" className="w-24" />
