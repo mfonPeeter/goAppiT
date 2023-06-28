@@ -98,10 +98,10 @@ const Services = () => {
           </h3>
           <p className="text-md text-[#555] lg:text-lg">
             Automation can significantly enhance productivity and reduce manual
-            effort. We develop custom automation soluFons tailored to your
+            effort. We develop custom automation solutions tailored to your
             specific business processes. By automating repetitive and
             time-consuming tasks, we help you save valuable time, minimize
-            errors, and optimnize resource utilization. Our automation solutions
+            errors, and optimize resource utilization. Our automation solutions
             can range from simple scripting to more complex workflow
             orchestration.
           </p>
