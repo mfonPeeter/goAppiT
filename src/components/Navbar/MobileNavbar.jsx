@@ -13,7 +13,7 @@ const MobileNavbar = ({
         open ? "left-0 opacity-100" : "right-[100%] opacity-0"
       }`}
     >
-      <li className="inline-block w-72 border-b border-red-400 sm:w-96">
+      <li className="inline-block w-72 border-b border-red-300 sm:w-96">
         <div className="flex flex-col">
           <div className="group flex items-center justify-between cursor-pointer">
             <NavLink
@@ -77,7 +77,7 @@ const MobileNavbar = ({
           </ul>
         </div>
       </li>
-      <li className="w-72 border-b border-red-400 sm:w-96">
+      <li className="w-72 border-b border-red-300 sm:w-96">
         <NavLink
           to="/solutions"
           className={`${({ isActive }) =>
@@ -87,7 +87,7 @@ const MobileNavbar = ({
           Solutions
         </NavLink>
       </li>
-      <li className="w-72 border-b border-red-400 sm:w-96">
+      <li className="w-72 border-b border-red-300 sm:w-96">
         <NavLink
           to="/consulting"
           className={`${({ isActive }) =>
@@ -97,7 +97,7 @@ const MobileNavbar = ({
           Consulting
         </NavLink>
       </li>
-      <li className="inline-block w-72 border-b border-red-400 sm:w-96">
+      <li className="inline-block w-72 border-b border-red-300 sm:w-96">
         <div className="flex flex-col">
           <div className="group flex items-center justify-between cursor-pointer">
             <NavLink
@@ -135,7 +135,7 @@ const MobileNavbar = ({
           </ul>
         </div>
       </li>
-      <li className="w-72 border-b border-red-400 sm:w-96">
+      <li className="w-72 border-b border-red-300 sm:w-96">
         <NavLink
           to="/about-us"
           className={`${({ isActive }) =>
