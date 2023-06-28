@@ -4,7 +4,7 @@ import heroGif from "/assets/hero-gif.gif";
 
 const Hero = () => {
   return (
-    <section className="pt-2 pb-28 px-14 text-[#4b0519] bg-[#feb8cc] md:pt-4 lg:pt-8 xl:px-24">
+    <section className="pt-2 pb-28 px-14 text-[#4b0519] bg-gray-300 md:pt-4 lg:pt-8 xl:px-24">
       <div className="container mx-auto max-w-[1450px] flex flex-col-reverse space-y-reverse space-y-10 items-center justify-between lg:flex-row lg:space-y-0 lg:space-x-2 xl:gap-24">
         <div className="w-full lg:w-1/2">
           <h1 className="mb-4 max-w-3xl mx-auto text-center text-3xl font-bold lg:max-w-2xl lg:mx-0 lg:text-left lg:text-4xl xl:text-5xl">
