@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import MobileNavbar from "./MobileNavbar";
 import goappitLogo from "/assets/logo.png";
 
-const Navbar = () => {
+const Navbar = ({ stickyNav }) => {
   const [open, setOpen] = useState(false);
   const [serviceOpenSubmenu, setServiceOpenSubmenu] = useState(false);
   const [appsOpenSubmenu, setAppsOpenSubmenu] = useState(false);
@@ -14,7 +14,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="text-[#4b0519] bg-gray-300 md:px-4 lg:px-9">
+    <nav
+      className={`text-[#4b0519] bg-gray-300 md:px-4 lg:px-9 ${
+        stickyNav && "fixed w-full bg-white shadow-lg"
+      }`}
+    >
       <div className="container mx-auto max-w-screen-2xl flex items-center justify-between font-medium">
         <div className="z-50 w-full px-6 flex justify-between md:px-0 md:w-auto">
           <Link to="/" className="py-6 inline-block outline-[#feb8cc]">
@@ -22,7 +26,7 @@ const Navbar = () => {
           </Link>
           <div className="px-6 py-6 md:hidden">
             <button
-              className={`z-20 fixed hamburger block outline-[#feb8cc] md:hidden ${
+              className={`z-20 hamburger block outline-[#feb8cc] md:hidden ${
                 open && "open"
               }`}
               onClick={navToggleHandler}
@@ -43,7 +47,7 @@ const Navbar = () => {
                   isActive &&
                   "active"} flex py-6 px-3 outline-[#feb8cc] transition-colors hover:text-[#fa1154]`}
               >
-                Service
+                Services
                 <span className="flex items-center ml-1">
                   <ion-icon name="chevron-down-outline"></ion-icon>
                 </span>

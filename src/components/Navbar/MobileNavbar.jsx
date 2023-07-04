@@ -22,7 +22,7 @@ const MobileNavbar = ({
                 isActive &&
                 "active"} py-4 inline-block transition-colors outline-[#feb8cc] group-hover:text-[#fa1154] hover:text-[#fa1154]`}
             >
-              Service
+              Services
             </NavLink>
             <div
               className={`w-full py-5 flex justify-end ${
