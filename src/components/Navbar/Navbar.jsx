@@ -24,7 +24,7 @@ const Navbar = ({ stickyNav }) => {
           <Link to="/" className="py-6 inline-block outline-[#feb8cc]">
             <img src={goappitLogo} alt="Logo" className="w-24" />
           </Link>
-          <div className="px-6 py-6 md:hidden">
+          <div className="py-6 md:hidden">
             <button
               className={`z-20 hamburger block outline-[#feb8cc] md:hidden ${
                 open && "open"
