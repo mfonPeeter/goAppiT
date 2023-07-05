@@ -24,12 +24,12 @@ const Navbar = ({ stickyNav }) => {
           <Link
             to="/"
             className={`inline-block outline-[#feb8cc] ${
-              stickyNav ? "py-4" : "py-6"
+              stickyNav ? "py-5" : "py-6"
             }`}
           >
             <img src={goappitLogo} alt="Logo" className="w-24" />
           </Link>
-          <div className={`md:hidden ${stickyNav ? "py-4" : "py-6"}`}>
+          <div className={`md:hidden ${stickyNav ? "py-5" : "py-6"}`}>
             <button
               className={`z-20 hamburger block outline-[#feb8cc] md:hidden ${
                 open && "open"
