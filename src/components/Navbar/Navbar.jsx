@@ -21,10 +21,15 @@ const Navbar = ({ stickyNav }) => {
     >
       <div className="container mx-auto max-w-screen-2xl flex items-center justify-between font-medium">
         <div className="z-50 w-full px-6 flex justify-between md:px-0 md:w-auto">
-          <Link to="/" className="py-6 inline-block outline-[#feb8cc]">
+          <Link
+            to="/"
+            className={`inline-block outline-[#feb8cc] ${
+              stickyNav ? "py-4" : "py-6"
+            }`}
+          >
             <img src={goappitLogo} alt="Logo" className="w-24" />
           </Link>
-          <div className="py-6 md:hidden">
+          <div className={`md:hidden ${stickyNav ? "py-4" : "py-6"}`}>
             <button
               className={`z-20 hamburger block outline-[#feb8cc] md:hidden ${
                 open && "open"
