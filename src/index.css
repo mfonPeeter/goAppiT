@@ -56,7 +56,9 @@
     transform: rotate(-45deg) translateY(6px) translateX(-6px);
   }
 
-  /* Down Arrow Icon */
+  /* Icons */
+
+  /* Navigation */
   .mobile-down-icon-box ion-icon {
     rotate: 180deg;
     transition: 200ms;
@@ -67,8 +69,23 @@
     transition: 200ms;
   }
 
+  /* Our Approach */
+  .approach-icon-box ion-icon {
+    color: #fa1154;
+    font-size: 24px;
+  }
+
   /* NavLink */
   a.active {
     color: #fa4238;
+  }
+
+  /* Media Queries */
+  @media (min-width: 768px) {
+    /* Icons */
+    /* Our Approach */
+    .approach-icon-box ion-icon {
+      font-size: 32px;
+    }
   }
 }

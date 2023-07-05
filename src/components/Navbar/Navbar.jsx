@@ -16,7 +16,7 @@ const Navbar = ({ stickyNav }) => {
   return (
     <nav
       className={`text-[#4b0519] bg-gray-300 md:px-4 lg:px-9 ${
-        stickyNav && "fixed w-full bg-white shadow-lg"
+        stickyNav && "fixed z-50 w-full bg-white shadow-lg"
       }`}
     >
       <div className="container mx-auto max-w-screen-2xl flex items-center justify-between font-medium">

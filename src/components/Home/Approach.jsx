@@ -4,8 +4,11 @@ const Approach = () => {
       <h2 className="mb-10 text-3xl text-center text-[#333] font-bold md:mb-12 lg:text-4xl">
         Approach
       </h2>
-      <div className="mx-auto max-w-[1420px] grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
+      <div className="mx-auto max-w-[1420px] grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3">
         <div className="px-6 py-8 bg-white rounded-2xl shadow-lg">
+          <div className="approach-icon-box flex items-center justify-center mb-4 p-2 w-min bg-[#fecfdd] rounded-lg">
+            <ion-icon name="analytics-outline"></ion-icon>
+          </div>
           <h3 className="mb-2 text-xl text-[#333] font-semibold lg:text-2xl">
             Requirements Analysis
           </h3>
@@ -15,6 +18,9 @@ const Approach = () => {
           </p>
         </div>
         <div className="px-6 py-8 bg-white rounded-2xl shadow-lg">
+          <div className="approach-icon-box flex items-center justify-center mb-4 p-2 w-min bg-[#fecfdd] rounded-lg">
+            <ion-icon name="bulb-outline"></ion-icon>
+          </div>
           <h3 className="mb-2 text-xl text-[#333] font-semibold lg:text-2xl">
             Solution Design
           </h3>
@@ -24,6 +30,9 @@ const Approach = () => {
           </p>
         </div>
         <div className="px-6 py-8 bg-white rounded-2xl shadow-lg">
+          <div className="approach-icon-box flex items-center justify-center mb-4 p-2 w-min bg-[#fecfdd] rounded-lg">
+            <ion-icon name="code-slash-outline"></ion-icon>
+          </div>
           <h3 className="mb-2 text-xl text-[#333] font-semibold lg:text-2xl">
             Development and Testing
           </h3>
@@ -34,6 +43,9 @@ const Approach = () => {
           </p>
         </div>
         <div className="px-6 py-8 bg-white rounded-2xl shadow-lg">
+          <div className="approach-icon-box flex items-center justify-center mb-4 p-2 w-min bg-[#fecfdd] rounded-lg">
+            <ion-icon name="rocket-outline"></ion-icon>
+          </div>
           <h3 className="mb-2 text-xl text-[#333] font-semibold lg:text-2xl">
             Deployment and Integration
           </h3>
@@ -44,6 +56,9 @@ const Approach = () => {
           </p>
         </div>
         <div className="px-6 py-8 bg-white rounded-2xl shadow-lg">
+          <div className="approach-icon-box flex items-center justify-center mb-4 p-2 w-min bg-[#fecfdd] rounded-lg">
+            <ion-icon name="construct-outline"></ion-icon>
+          </div>
           <h3 className="mb-2 text-xl text-[#333] font-semibold lg:text-2xl">
             Maintenance and Support
           </h3>
