@@ -20,7 +20,7 @@ const Hero = () => {
           <div className="flex justify-center lg:flex lg:justify-start">
             <Link
               to="/contact-us"
-              className="px-5 py-2 text-white bg-[#fa1154] rounded-full inline-block transition-colors hover:bg-[#e10f4c]"
+              className="px-5 py-2 text-white bg-[#fa1154] font-semibold rounded-full inline-block transition-colors hover:bg-[#e10f4c]"
             >
               Contact Us
             </Link>

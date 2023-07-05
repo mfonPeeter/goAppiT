@@ -149,7 +149,7 @@ const MobileNavbar = ({
       <div className="pt-8 w-72 sm:w-96">
         <NavLink
           to="/contact-us"
-          className="w-full py-3 text-white text-center bg-[#fa1154] rounded-full inline-block transition-colors hover:bg-[#e10f4c]"
+          className="w-full py-3 text-white text-center bg-[#fa1154] font-semibold rounded-full inline-block transition-colors hover:bg-[#e10f4c]"
         >
           Contact Us
         </NavLink>
