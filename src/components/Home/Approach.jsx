@@ -5,7 +5,7 @@ const Approach = () => {
         Approach
       </h2>
       <div className="mx-auto max-w-[1420px] grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3">
-        <div className="px-6 py-8 bg-white rounded-2xl shadow-lg">
+        <div className="px-6 py-8 bg-white rounded-xl shadow-lg">
           <div className="approach-icon-box flex items-center justify-center mb-4 p-2 w-min bg-[#fecfdd] rounded-lg">
             <ion-icon name="analytics-outline"></ion-icon>
           </div>
@@ -17,7 +17,7 @@ const Approach = () => {
             objectives, challenges, and specific requirements for each project.
           </p>
         </div>
-        <div className="px-6 py-8 bg-white rounded-2xl shadow-lg">
+        <div className="px-6 py-8 bg-white rounded-xl shadow-lg">
           <div className="approach-icon-box flex items-center justify-center mb-4 p-2 w-min bg-[#fecfdd] rounded-lg">
             <ion-icon name="bulb-outline"></ion-icon>
           </div>
@@ -29,7 +29,7 @@ const Approach = () => {
             and leverage the appropriate technologies and methodologies.
           </p>
         </div>
-        <div className="px-6 py-8 bg-white rounded-2xl shadow-lg">
+        <div className="px-6 py-8 bg-white rounded-xl shadow-lg">
           <div className="approach-icon-box flex items-center justify-center mb-4 p-2 w-min bg-[#fecfdd] rounded-lg">
             <ion-icon name="code-slash-outline"></ion-icon>
           </div>
@@ -42,7 +42,7 @@ const Approach = () => {
             quality and reliability.
           </p>
         </div>
-        <div className="px-6 py-8 bg-white rounded-2xl shadow-lg">
+        <div className="px-6 py-8 bg-white rounded-xl shadow-lg">
           <div className="approach-icon-box flex items-center justify-center mb-4 p-2 w-min bg-[#fecfdd] rounded-lg">
             <ion-icon name="rocket-outline"></ion-icon>
           </div>
@@ -55,7 +55,7 @@ const Approach = () => {
             infrastructure.
           </p>
         </div>
-        <div className="px-6 py-8 bg-white rounded-2xl shadow-lg">
+        <div className="px-6 py-8 bg-white rounded-xl shadow-lg">
           <div className="approach-icon-box flex items-center justify-center mb-4 p-2 w-min bg-[#fecfdd] rounded-lg">
             <ion-icon name="construct-outline"></ion-icon>
           </div>
