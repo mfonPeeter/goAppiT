@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const CTA = () => {
   return (
-    <section className="pt-12 pb-24 px-5 bg-[#fa1154] sm:px-10 md:pt-14 xl:px-32">
+    <section className="py-14 px-5 bg-[#fa1154] sm:px-10 md:py-16 xl:px-32">
       <h2 className="mb-6 max-w-7xl mx-auto text-lg text-white text-center lg:mb-8 lg:text-xl">
         At GOAPPiT, we are committed to delivering sofware solutions that
         empower your business, drive efficiency, and enable growth. Contact us

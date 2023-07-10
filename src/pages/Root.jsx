@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
 
-import Navbar from "../components/Navbar/Navbar";
+import Navbar from "../components/ui/Navbar/Navbar";
+import Footer from "../components/ui/Footer";
 
 const RootLayout = () => {
   const [stickyNav, setStickyNav] = useState(false);
@@ -22,6 +23,7 @@ const RootLayout = () => {
       <main>
         <Outlet />
       </main>
+      <Footer />
     </>
   );
 };
