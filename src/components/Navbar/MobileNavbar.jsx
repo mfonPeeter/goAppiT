@@ -42,7 +42,7 @@ const MobileNavbar = ({
           >
             <li className="flex flex-col space-y-2.5">
               <NavLink
-                to="/web-development"
+                to="/services/web-development"
                 className={`${({ isActive }) =>
                   isActive &&
                   "active"} outline-[#feb8cc] transition-colors hover:text-[#fa1154]`}

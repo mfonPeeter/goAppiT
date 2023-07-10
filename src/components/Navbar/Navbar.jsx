@@ -60,7 +60,7 @@ const Navbar = ({ stickyNav }) => {
               <ul className="hidden absolute top-16 px-2 py-3 bg-gray-200 rounded-xl shadow-lg transition-all duration-300 group-hover:block hover:block">
                 <li className="flex flex-col space-y-2">
                   <NavLink
-                    to="/web-development"
+                    to="/services/web-development"
                     className={`${({ isActive }) =>
                       isActive &&
                       "active"} px-2 rounded-md outline-[#feb8cc] transition-color hover:text-[#fa1154] hover:bg-slate-300`}
