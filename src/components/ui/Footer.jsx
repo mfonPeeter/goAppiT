@@ -5,11 +5,18 @@ import goappitInverseLogo from "/assets/logo-inverse.png";
 const Footer = () => {
   return (
     <footer className="pt-12 pb-24 px-5 text-[#555] sm:px-10 md:pt-14 xl:px-32">
-      <div className="mx-auto max-w-[1420px] flex flex-col items-center space-y-8 sm:flex-row sm:justify-between sm:space-y-0 sm:items-start sm:space-x-6">
-        <div className="w-full flex items-center justify-around space-x-2 sm:space-x-6">
+      <div className="mx-auto max-w-[1420px] flex flex-col items-center space-y-8 sm:flex-row sm:space-y-0 sm:space-x-6 sm:items-start">
+        <div className="flex justify-center">
           <Link to="/" className="outline-[#feb8cc]">
-            <img src={goappitInverseLogo} alt="Logo" className="w-24 lg:w-32" />
+            <img
+              src={goappitInverseLogo}
+              alt="Logo"
+              className="w-24 sm:w-full"
+            />
           </Link>
+        </div>
+
+        <div className="w-full flex justify-around space-x-2 sm:space-x-6">
           <div>
             <h4 className="mb-3 text-lg text-[#333] font-semibold lg:text-xl">
               Services
@@ -49,9 +56,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-        </div>
-
-        <div className="w-full flex justify-around space-x-2 sm:space-x-6">
           <div>
             <h4 className="mb-3 text-lg text-[#333] font-semibold lg:text-xl">
               Company
@@ -83,6 +87,9 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+        </div>
+
+        <div className="w-full flex justify-around space-x-2 sm:space-x-6">
           <div>
             <h4 className="mb-3 text-lg text-[#333] font-semibold lg:text-xl">
               Contact Us
@@ -98,16 +105,15 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-        </div>
+          <div className="flex space-x-3 items-center">
+            <Link className="footer-icon-box outline-[#feb8cc]">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </Link>
 
-        <div className="flex space-x-3">
-          <Link className="footer-icon-box outline-[#feb8cc]">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </Link>
-
-          <Link className="footer-icon-box outline-[#feb8cc]">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </Link>
+            <Link className="footer-icon-box outline-[#feb8cc]">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
