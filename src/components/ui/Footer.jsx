@@ -4,7 +4,7 @@ import goappitInverseLogo from "/assets/logo-inverse.png";
 
 const Footer = () => {
   return (
-    <footer className="pt-12 pb-24 px-5 text-[#555] sm:px-10 md:pt-14 xl:px-32">
+    <footer className="pt-12 pb-16 px-5 text-[#555] sm:px-10 md:pt-14 xl:px-32">
       <div className="mx-auto max-w-[1420px] flex flex-col items-center space-y-8 sm:flex-row sm:space-y-0 sm:space-x-6 sm:items-start">
         <div className="flex justify-center">
           <Link to="/" className="outline-[#feb8cc]">

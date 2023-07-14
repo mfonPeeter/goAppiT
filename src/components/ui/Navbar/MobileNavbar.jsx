@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const MobileNavbar = ({
   open,
@@ -9,7 +9,7 @@ const MobileNavbar = ({
 }) => {
   return (
     <ul
-      className={`fixed w-full h-full bottom-0 flex flex-col items-center py-20 px-2 bg-gray-300 transition-all duration-[350ms] ease-linear md:hidden ${
+      className={`nav-link fixed w-full h-full bottom-0 flex flex-col items-center py-20 px-2 bg-gray-300 transition-all duration-[350ms] ease-linear md:hidden ${
         open ? "left-0 opacity-100" : "right-[100%] opacity-0"
       }`}
     >
@@ -147,12 +147,12 @@ const MobileNavbar = ({
       </li>
 
       <div className="pt-8 w-72 sm:w-96">
-        <NavLink
+        <Link
           to="/contact-us"
           className="w-full py-3 text-white text-center bg-[#fa1154] font-semibold rounded-full inline-block transition-colors hover:bg-[#e10f4c]"
         >
           Contact Us
-        </NavLink>
+        </Link>
       </div>
     </ul>
   );

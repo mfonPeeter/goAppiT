@@ -57,7 +57,7 @@
   }
 
   /* NavLink */
-  a.active {
+  .nav-link a.active {
     color: #fa4238;
   }
 

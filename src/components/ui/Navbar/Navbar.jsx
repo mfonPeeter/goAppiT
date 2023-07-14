@@ -44,7 +44,7 @@ const Navbar = ({ stickyNav }) => {
         </div>
 
         <div className="hidden items-center space-x-7 md:flex lg:space-x-24">
-          <ul className="flex space-x-1 lg:space-x-7">
+          <ul className="nav-link flex space-x-1 lg:space-x-7">
             <li className="group">
               <NavLink
                 to="/service"
@@ -149,12 +149,12 @@ const Navbar = ({ stickyNav }) => {
             </li>
           </ul>
           <div>
-            <NavLink
+            <Link
               to="/contact-us"
               className="px-5 py-2 text-white bg-[#fa1154] font-semibold rounded-full inline-block transition-colors hover:bg-[#e10f4c]"
             >
               Contact Us
-            </NavLink>
+            </Link>
           </div>
         </div>
 
