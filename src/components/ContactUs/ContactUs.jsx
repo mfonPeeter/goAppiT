@@ -3,7 +3,7 @@ import contactUsImg from "/assets/contact-us/contact-us.png";
 const ContactUs = () => {
   return (
     <section className="mb-8">
-      <div className="w-full h-[280px] bg-[url('/assets/contact-us/contact-us-bg2.jpg')] bg-no-repeat bg-center bg-cover sm:h-[300px] md:h-[400px] lg:h-[550px] 2xl:h-[800px]" />
+      <div className="w-full h-[280px] bg-[url('/assets/contact-us/contact-us-bg1.jpg')] bg-no-repeat bg-center bg-cover sm:h-[300px] md:h-[400px] lg:h-[550px] 2xl:h-[800px]" />
       <div className="pt-12 mb-12 text-center">
         <h2 className="mb-2 text-3xl text-center text-[#333] font-bold lg:text-4xl">
           Get in Touch
